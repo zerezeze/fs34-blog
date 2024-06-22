@@ -1,2 +1,2 @@
 # fs34-blog
-Reactive Blog
+React with Tailwind Blog
