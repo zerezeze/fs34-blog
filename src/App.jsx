@@ -1,68 +1,53 @@
-function Header({children}) {
+import Header from "./components/Header";
+import FormBase from "./components/FormBase";
 
-  return (
-    <header className="bg-blue-800">
-      <nav className="mx-auto flex items-center p-6 shadow-md">
-        {children}
-        
-
-      </nav>
-
-    </header>
-  )
-
-}
-
-function HeaderLink({href, children}) {
-  return (
-    <a href={href} className="text-xl font-semibold leading-6 text-white ml-5">{children}</a>
-  )
-}
 
 function App() {
   
 
   return (
-    
-    <>
-    <Header>
-    <HeaderLink href="https://company">Company</HeaderLink>
-    <HeaderLink href="https://marketplace">Marketplace</HeaderLink>
-    <HeaderLink href="https://teste">Teste</HeaderLink>
+    <Header className="bg-black flex p-3 border-b-2 border-neutral-900 font-mono">
+      <h1 className="ml-5 text-xl text-white font-semibold font-mono">Fs34Blog</h1>
+      <FormBase className="ml-5 mt-1">
+        <input  className="rounded" type="text" placeholder=" Pesquise aqui..."/>
+        <button className="text-white border rounded px-3 border-white ml-3">Pesquisar</button>
+      </FormBase>
     </Header>
-    </>
     
+   
   );
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
